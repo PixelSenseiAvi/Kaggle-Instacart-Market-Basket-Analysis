@@ -121,3 +121,23 @@ order_id,products
 ...
 
 
+# Important datasets are:
+ order.csv - It contains all the information regarding an order like
+             order id, user id, evaluation set it belongs to,
+             day of the week it was ordered(order_dow), hour,
+             and days since prior order.
+ order_product__prior.csv - it contains order_id and corresponding product_id,
+                           product order in the cart, and whether it is ordered 
+                           again or not. It has prior data of all the users.
+ order_product_train.csv - same as prior but it has only training data.
+
+# Intution
+Calculating user buy probability, reorder probability and mean position of each each item in cart will be useful.
+
+# XgBoost
+parameters( logistic regression, metric = logloss, learning rate = 0.1)
+
+
+
+
+
